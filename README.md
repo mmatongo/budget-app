@@ -1,24 +1,91 @@
-# README
+# Budget App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Mobile budget web app
+![screenshot](screenshots/1.png)
+A simple budget app built using the Ruby on Rails framework.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
+- PostgreSQL
 
-* System dependencies
+## Getting Started
 
-* Configuration
+To get a local copy up and running follow these simple example steps.
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://gorails.com/)
 
-* How to run the test suite
+### Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+- Make sure you have Ruby on Rails set up properly on your computer
+- Clone or download this repo on your machine
+- Enter project directory
 
-* Deployment instructions
+### Development Database
 
-* ...
+```sh
+# Create user
+sudo -u postgres createuser budget -s
+```
+
+```sh
+# test the view
+rake db:reset # this will drop the database, create it, and load the schema and run the seed data
+```
+
+### Install
+
+```sh
+bundle install
+```
+
+### Run
+
+```sh
+rails s
+```
+
+### Test
+
+```sh
+rake rspec
+```
+
+#### IF TESTS FAIL
+
+```sh
+RAILS_ENV=test rake db:reset
+``
+<br>
+then
+<br>
+```sh
+rake db:seed
+```
+
+## Author
+
+👤 **Daniel M. Matongo**
+
+- GitHub: [@mmatongo](https://github.com/mmatongo)
+- LinkedIn: [Daniel M. matongo](https://linkedin.com/in/mmatongo)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+## License
+
+[MIT](./LICENSE)
