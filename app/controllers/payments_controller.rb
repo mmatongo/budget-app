@@ -12,7 +12,7 @@ class PaymentsController < ApplicationController
   def create
     @payment = Payment.new(payment_params)
     @payment.author = current_user
-    
+
     respond_to do |format|
       if @payment.save
         format.html { redirect_to @payment.categories.first, notice: 'Payment was successfully created.' }
@@ -23,6 +23,6 @@ class PaymentsController < ApplicationController
   end
 
   def payment_params
-    params.require(:payment).permit(:name, :amount, :category_ids => [])
+    params.require(:payment).permit(:name, :amount, category_ids: [])
   end
 end
