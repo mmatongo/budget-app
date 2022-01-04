@@ -4,10 +4,13 @@
 ![screenshot](screenshots/1.png)
 A simple budget app built using the Ruby on Rails framework.
 
+- Presentation Video: [HERE](https://drive.google.com/file/d/15KyDFOMj3OX9N7G3H1LnaGzkCrggODy2/view?usp=sharing)
+
 ## Built With
 
 - Ruby on Rails
 - PostgreSQL
+- Bulma CSS
 
 ## Getting Started
 
@@ -60,11 +63,6 @@ rake rspec
 RAILS_ENV=test rake db:reset
 ``
 <br>
-then
-<br>
-```sh
-rake db:seed
-```
 
 ## Author
 
