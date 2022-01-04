@@ -14,7 +14,6 @@
  *= require_self
  */
 @import "colors";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 *,
 *::after,
@@ -22,7 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "ProximaLight", serif;
 }
 
 ul,
@@ -36,7 +35,7 @@ a {
 }
 
 html {
-  font-family: 'Lato', sans-serif;
+  font-family: "ProximaLight", serif;
   color: $text-color;
 }
 
