@@ -11,7 +11,7 @@ RSpec.describe 'Root path', type: :feature do
 
     expect(page).to have_content 'Categories'
   end
-    
+
   scenario 'User can see categories with icon' do
     visit root_path
 

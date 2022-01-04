@@ -13,17 +13,18 @@ RSpec.describe 'Payments', type: :request do
   describe 'POST /payments' do
     context 'with valid params' do
       it 'creates a new Payment' do
-        expect {
-          post payments_url, params: { payment: FactoryBot.attributes_for(:payment, category_ids: [FactoryBot.create(:category).id]) }
-        }.to change(Payment, :count).by(1)
+        expect do
+          post payments_url,
+               params: { payment: FactoryBot.attributes_for(:payment, category_ids: [FactoryBot.create(:category).id]) }
+        end.to change(Payment, :count).by(1)
       end
     end
 
     context 'with invalid params' do
       it 'does not create a new Payment' do
-        expect {
+        expect do
           post payments_url, params: { payment: FactoryBot.attributes_for(:payment, name: nil) }
-        }.to change(Payment, :count).by(0)
+        end.to change(Payment, :count).by(0)
       end
 
       it 'renders a successful response' do
