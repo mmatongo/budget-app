@@ -11,6 +11,11 @@ $shadow-color: #f1f1f2;
   color: $on-main;
 }
 
+.main-c {
+  background-color: $main-color;
+  color: $on-main;
+}
+
 .is-secondary {
   background-color: $secondary-color;
   color: $on-secondary;
