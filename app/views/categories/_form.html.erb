@@ -1,10 +1,13 @@
 <div class="has-background-color is-flex flex-grow-1 flex-direction-column">
   <%= form_with(model: category) do |form| %>
     <div class="header">
+      <%= link_to categories_path, class: "button" do %>
+        <span class="has-text-white material-icons-outlined">arrow_back</span>
+      <% end %>
       <div class="is-flex flex-grow-1 justify-content-center">
-        <h2 class="title">New Category</h2>
+        <h2 class="has-text-white title">New Category</h2>
       </div>
-      <%= form.submit "Save", class: "button has-text-white" %>
+      <%= form.submit "Save", class: "button save has-text-white" %>
     </div>
     <%= render "devise/shared/error_messages", resource: category %>
     <div class="input-group my-2 shadow-box">

@@ -1,7 +1,7 @@
 <div class="is-flex flex-direction-column flex-grow-1">
   <header class="header">
 		<%= link_to categories_path, class: "button" do %>
-      <span class="material-icons-outlined">arrow_back</span>
+      <span class="material-icons-outlined has-text-white">arrow_back</span>
     <% end %>
     <div class="is-flex flex-grow-1 justify-content-center">
       <h1 class="title">Transactions</h1>
@@ -17,6 +17,6 @@
 	<div class="divider mb-2"></div>
 	<%= render 'payments/index', locals: { payments: @payments } %>
 </div>
-<footer class="p-4 is-secondary">
+<footer class="p-4 has-text-white is-secondary">
   <%= link_to 'Add a new transaction', new_payment_path, class: "button is-outlined" %>
 </footer>
