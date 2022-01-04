@@ -15,7 +15,7 @@
       <div class="divider"></div>
       <%= form.number_field :amount, placeholder: "Amount", class: "input", required: true %>
       <div class="divider"></div>
-      <%= form.collection_select :category_ids, current_user.categories.order(:name), :id, :name, {}, { class: "input", multiple: true } %>
+      <%= form.collection_select :category_ids, current_user.categories.order(:name), :id, :name, {}, { class: "input", multiple: true, required: true } %>
     </div>
   <% end %>
 </div>

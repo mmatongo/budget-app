@@ -1,10 +1,15 @@
 # Budget App
 
 > Mobile budget web app
+
 ![screenshot](screenshots/1.png)
+
+<br>
 A simple budget app built using the Ruby on Rails framework.
 
 - Presentation Video: [HERE](https://drive.google.com/file/d/15KyDFOMj3OX9N7G3H1LnaGzkCrggODy2/view?usp=sharing)
+
+- Live Demo: [HERE](https://murmuring-reef-55251.herokuapp.com/)
 
 ## Built With
 
@@ -18,25 +23,37 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Setup Ruby and Ruby on Rails on your computer.
+
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Rails](https://gorails.com/)
 
 ### Setup
 
 - Make sure you have Ruby on Rails set up properly on your computer
-- Clone or download this repo on your machine
+- Clone or download this repo on your machine by running the following command:
+
+```sh
+git clone https://github.com/mmatongo/budget-app.git
+```
+
 - Enter project directory
 
 ### Development Database
 
 ```sh
 # Create user
-sudo -u postgres createuser budget -s
+sudo -u postgres createuser budget-app -s
 ```
 
 ```sh
-# test the view
-rake db:reset # this will drop the database, create it, and load the schema and run the seed data
+# install gems and npm packages
+bundle install
+```
+
+```sh
+# this will drop the database, create it, and load the schema and run the seed data
+rake db:reset
 ```
 
 ### Install
@@ -61,8 +78,7 @@ rake rspec
 
 ```sh
 RAILS_ENV=test rake db:reset
-``
-<br>
+```
 
 ## Author
 
@@ -83,6 +99,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+- Original design idea by Gregoire Vella on [Behance](https://www.behance.net/gregoirevella).
 
 ## License
 
