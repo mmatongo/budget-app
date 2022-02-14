@@ -10,7 +10,7 @@
       <%= form.submit "Save", class: "button save has-text-white" %>
     </div>
     <%= render "devise/shared/error_messages", resource: category %>
-    <div class="input-group my-2 shadow-box">
+    <div class="my-2 shadow-box">
       <%= form.text_field :name, autofocus: true, placeholder: "Name", class: "input", required: true %>
       <div class="divider"></div>
       <%= form.url_field :icon, placeholder: "Icon", class: "input", required: true %>
