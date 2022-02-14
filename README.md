@@ -9,7 +9,7 @@ A simple budget app built using the Ruby on Rails framework.
 
 - Presentation Video: [HERE](https://drive.google.com/file/d/15KyDFOMj3OX9N7G3H1LnaGzkCrggODy2/view?usp=sharing)
 
-- Live Demo: [HERE](https://murmuring-reef-55251.herokuapp.com/)
+- Live Demo: [HERE](https://quiet-journey-97502.herokuapp.com/)
 
 ## Built With
 
