@@ -40,9 +40,14 @@
 }
 
 .input {
+  margin-left: 0.5rem;
   border: none;
-  width: 100%;
+  width: 95%;
   padding: 1rem;
+}
+
+.input:focus {
+  outline: none;
 }
 
 .shadow-box {
@@ -50,7 +55,7 @@
 }
 
 .divider {
-  height: 2px;
+  height: 3px;
   background-color: $shadow-color;
 }
 
@@ -82,4 +87,9 @@
 
 .lg-btn {
   width: 1000px;
+}
+
+.wid {
+  width: 95%;
+  margin-left: 0.5rem;
 }
