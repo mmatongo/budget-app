@@ -9,7 +9,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="title" property="og:title" content="Budget App" />
+    <meta property="og:type" content="Website" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://user-images.githubusercontent.com/40806126/153959327-79348ba0-2c0b-49c2-b6a6-6acd7954f236.png"
+    />
+    <meta name="description" property="og:description" content="Rails application that allows users to keep track of your spending in a categorised manner" />
+    <meta name="author" property="og:author" content="Daniel M. Matongo" />
   </head>
 
   <body>
