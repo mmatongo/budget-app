@@ -59,5 +59,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data'
+gem 'net-imap', require: false
+gem 'net-pop', require: false
 gem 'net-smtp', require: false
+gem 'tzinfo-data'
